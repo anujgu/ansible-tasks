@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    ansible_become_pass: 123
+    var_node: /tmp
+  roles:
+     - role_p1t1
+     - role_p1t2
+     - role_p1t3
+     - role_p1t4

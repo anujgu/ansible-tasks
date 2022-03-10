@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Uninstall the httpd server
+      block:
+        - name: unistall httpd
+          ansible.builtin.yum: 
+            name: httpd
+            state: absent

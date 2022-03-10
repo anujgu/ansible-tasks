@@ -1,0 +1,6 @@
+---
+# tasks file for role_p1t4
+- name: append data
+  lineinfile:
+    path: /home/devops/pqr/xyz.txt
+    line: hello ansible

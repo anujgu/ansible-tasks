@@ -1,0 +1,8 @@
+---
+- hosts: centos
+  become: yes
+  tasks: 
+     - name: append data
+       lineinfile:
+         path: /home/devops/abc/xyz.txt
+         line: hello ansible

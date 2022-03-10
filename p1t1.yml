@@ -1,0 +1,9 @@
+---
+- hosts: centos
+  tasks:
+    - name: Create directory 
+      become: yes
+      file: 
+        path: /home/devops/abc 
+        state: directory 
+        mode: 0755

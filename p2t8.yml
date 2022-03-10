@@ -1,0 +1,16 @@
+---
+- name: firewall
+  hosts: all
+  become: yes
+  tasks:
+    - name: firewall
+      firewalld:
+        zone: public
+        port: 8081/tcp
+        permanent: yes
+        state: enabled
+ 
+    - name: reload firewalld service
+      service: 
+        name: firewalld
+        state: restarted

@@ -1,0 +1,7 @@
+---
+# tasks file for role_p1t1
+- name: Create directory
+  file: 
+    path: /home/devops/pqr
+    state: directory
+    mode: 0755

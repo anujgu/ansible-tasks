@@ -1,0 +1,6 @@
+---
+# tasks file for role_p1t2
+- name: create empty file
+  file:
+    path: /home/devops/pqr/xyz.txt
+    state: touch
