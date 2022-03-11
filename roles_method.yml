@@ -9,3 +9,9 @@
      - role_p1t2
      - role_p1t3
      - role_p1t4
+     - role_install
+     - role_block
+     - role_port
+     - role_firewall
+    # - role_cpu
+
